@@ -1,4 +1,4 @@
-nssrf 1.0 Python package - linux version
+nssrf 1.0 Python package - Linux version
 ------------------------
 
 nssrf 1.0 is a Python package.
