@@ -166,7 +166,7 @@ FILE FORMAT
 
  Here is an example for the output file "topkNetwork.csv" :
 
-	q_name	db_name	label	pred
+	q_name	db_name	label	predictions
 
 	101	7	0.7	0.8
 
