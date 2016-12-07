@@ -86,9 +86,9 @@ HOW TO USE
 	
 	$ cd /nssrfPackage/sourceCode
 	
-	$ python
-	
 	$ chmod +x *
+	
+	$ python
 
 	$ import nssrf
 
