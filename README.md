@@ -85,6 +85,8 @@ HOW TO USE
 * import nssrf 1.0 Python package
 	
 	$ cd /nssrfPackage/sourceCode
+	
+	$ chmod +x *
 
 	$ import nssrf
 
@@ -92,7 +94,7 @@ HOW TO USE
 
 	$ nssrf.runMfinder(SUBGRAPH_SIZE)
 
-	$ featureExtract(SUBGRAPH_SIZE)
+	$ featureExtract(SUBGRAPH_SIZE, DB_END)
 
 	$ labelExtract(LABEL, DB_START, DB_END, QUERY_START, QUERY_END)
 
@@ -103,12 +105,14 @@ HOW TO USE
 * Example:
 
 	$ cd /nssrfPackage/sourceCode
+	
+	$ chmod +x *
 
 	$ import nssrf
 
 	$ nssrf.runMfinder(2)
 
-	$ featureExtract(2)
+	$ featureExtract(2, 100)
 
 	$ labelExtract('m1', 1, 100, 101, 110)
 
