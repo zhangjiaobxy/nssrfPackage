@@ -94,13 +94,13 @@ HOW TO USE
 
 	$ nssrf.runMfinder(SUBGRAPH_SIZE)
 
-	$ featureExtract(SUBGRAPH_SIZE, DB_END)
+	$ nssrf.featureExtract(SUBGRAPH_SIZE, DB_END)
 
-	$ labelExtract(LABEL, DB_START, DB_END, QUERY_START, QUERY_END)
+	$ nssrf.labelExtract(LABEL, DB_START, DB_END, QUERY_START, QUERY_END)
 
-	$ csvFeatureLabel(SUBGRAPH_SIZE, LABEL)
+	$ nssrf.csvFeatureLabel(SUBGRAPH_SIZE, LABEL)
 
-	$ rfRegression(SUBGRAPH_SIZE, LABEL, TOP_K_PERCENT)
+	$ nssrf.rfRegression(SUBGRAPH_SIZE, LABEL, TOP_K_PERCENT)
  
 * Example:
 
@@ -112,13 +112,13 @@ HOW TO USE
 
 	$ nssrf.runMfinder(2)
 
-	$ featureExtract(2, 100)
+	$ nssrf.featureExtract(2, 100)
 
-	$ labelExtract('m1', 1, 100, 101, 110)
+	$ nssrf.labelExtract('m1', 1, 100, 101, 110)
 
-	$ csvFeatureLabel(2,'m1')
+	$ nssrf.csvFeatureLabel(2,'m1')
 
-	$ rfRegression(2,'m1',10)
+	$ nssrf.rfRegression(2,'m1',10)
 
 * Parameters:
 
