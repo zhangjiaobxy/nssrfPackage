@@ -7,7 +7,7 @@ This tool performs global network similarity search based on random forest regre
 
 This package includes nssrf 1.0 Python package and related scripts and files for the following paper:
 
-NSSRF: global network similarity search with subgraph signatures and its applicaitons
+NSSRF: global network similarity search with subgraph signatures and its applications
 (Jiao Zhang, Sam Kwong, Yuheng Jia and Ka-Chun Wong)
 
 
