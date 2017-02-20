@@ -201,5 +201,19 @@ for e_subgraphSize in runSize:
         ftrain.close()
     combine_q_db_features(rootDir+"querySubgraphSize"+e_subgraphSize+"Feature.txt",rootDir+"dbSubgraphSize"+e_subgraphSize+"Feature.txt",rootDir+'featureSize'+e_subgraphSize+'.txt')
 
+    
+########################## sort feature file ##########################################
+featureSort = open(rootDir+'featureSize'+e_subgraphSize+'_temp.txt', 'r')
+featureSortWrite = open(rootDir+'featureSize'+e_subgraphSize+'.txt', 'w')
+feature_ls = featureSort.readlines()
+feature_ls = sorted(feature_ls, key=lambda x:float(x.strip().split('\t')[1]))  # sort feature file by db column
+feature_ls = sorted(feature_ls, key=lambda x:float(x.strip().split('\t')[0]))  # sort feature file by query column
+for feature_l in feature_ls:
+    featureSortWrite.write(feature_l)
+
+if os.path.exists(rootDir+'featureSize'+e_subgraphSize+'_temp.txt'):  # remove useless file
+    os.remove(rootDir+'featureSize'+e_subgraphSize+'_temp.txt')
+
+    
 print 'Congratulation! You have generated features of subgraph of size: ', subgraphSize
 print '\n*********************************************************************\n'
